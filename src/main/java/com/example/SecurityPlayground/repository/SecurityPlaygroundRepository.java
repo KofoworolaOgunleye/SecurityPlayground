@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface SecurityPlaygroundRepository extends CrudRepository<User, Long> {
-    List<User> findByGithubUsername(String githubUsername);
+    User findByGithubUsername(String githubUsername);
 }
