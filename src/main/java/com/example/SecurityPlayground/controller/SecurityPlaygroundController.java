@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1")
-public class Greeting {
+public class SecurityPlaygroundController {
 
     @GetMapping("/open/greeting")
     public String openGreeting(){
