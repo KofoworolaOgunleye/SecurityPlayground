@@ -19,7 +19,7 @@ public class SecurityConfig {
                 auth
                         .requestMatchers(HttpMethod.GET, "api/v1/open/greeting").permitAll()
                         .requestMatchers("api/v1/protected/greeting").authenticated()
-        ).formLogin(withDefaults());
+        ).oauth2Login(withDefaults());
 
         return http.build();
     }
